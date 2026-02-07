@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 50% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 50% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 50% 20%;
+    --primary: 160 100% 28%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 100% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 140 30% 95%;
+    --muted-foreground: 210 20% 40%;
+    --accent: 140 50% 90%;
+    --accent-foreground: 210 50% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 140 20% 85%;
+    --input: 140 20% 90%;
+    --ring: 160 100% 28%;
+    --radius: 0.5rem;
+    
+    /* Custom brand colors */
+    --brand-green: #00a651;
+    --brand-dark-green: #007a3d;
+    --brand-navy: #003366;
+    --brand-light-green: #e8f5e9;
+    --brand-lime: #c8e6c9;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-brand-green {
+    color: var(--brand-green);
+  }
+  .text-brand-navy {
+    color: var(--brand-navy);
+  }
+  .bg-brand-green {
+    background-color: var(--brand-green);
+  }
+  .bg-brand-dark-green {
+    background-color: var(--brand-dark-green);
+  }
+  .bg-brand-navy {
+    background-color: var(--brand-navy);
+  }
+  .bg-brand-light-green {
+    background-color: var(--brand-light-green);
+  }
+  .bg-brand-lime {
+    background-color: var(--brand-lime);
+  }
+  .border-brand-green {
+    border-color: var(--brand-green);
+  }
+}
