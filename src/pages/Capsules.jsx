@@ -86,7 +86,7 @@ const Capsules = () => {
                 We provide the top services of the production of various types of capsule dosage forms, including: gelatin capsules, vegetable capsules (HPMC), and softgel capsules.
               </p>
               <p className="text-gray-600 mb-8">
-                We produce excellent quality nutraceutical capsules using cutting-edge technology for different health requirements, ensuring consistency as well as safety. Our capsules are manufactured with precision and care to meet the highest quality standards.
+                We produce excellent quality Ayurvedic capsules using cutting-edge technology for different health requirements, ensuring consistency as well as safety. Our capsules are manufactured with precision and care to meet the highest quality standards.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (

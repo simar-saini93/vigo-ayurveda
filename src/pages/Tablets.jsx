@@ -86,7 +86,7 @@ const Tablets = () => {
                 We provide the top services of the production of various types of tablet dosage forms, including: coated, uncoated, effervescent, and chewable tablets.
               </p>
               <p className="text-gray-600 mb-8">
-                We produce excellent quality nutraceutical tablets using cutting-edge technology for different health requirements, ensuring consistency as well as safety. Our tablets are manufactured with precision and care to meet the highest quality standards.
+                We produce excellent quality Ayurvedic tablets using cutting-edge technology for different health requirements, ensuring consistency as well as safety. Our tablets are manufactured with precision and care to meet the highest quality standards.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (

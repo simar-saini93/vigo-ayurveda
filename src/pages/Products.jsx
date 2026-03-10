@@ -32,7 +32,7 @@ const Products = () => {
       name: 'Tablets',
       image: '/images/product-tablets.jpg',
       icon: Pill,
-      description: 'High-quality tablets manufactured with precision and care. Available in various formulations including herbal, nutraceutical, and ayurvedic compositions.',
+      description: 'High-quality tablets manufactured with precision and care. Available in various formulations including herbal and ayurvedic compositions.',
       features: ['Various shapes and sizes', 'Coated and uncoated options', 'Custom formulations available', 'GMP certified production']
     },
     {

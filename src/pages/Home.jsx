@@ -73,11 +73,18 @@ const Home = () => {
   ];
 
   const stats = [
-    { icon: Star, title: 'Customer Satisfaction', description: 'Harmeda Healthcare: Prioritizing customer satisfaction always.' },
-    { icon: Award, title: 'Product Quality', description: 'Harmeda Healthcare: Unmatched product quality always.' },
-    { icon: Headphones, title: 'Staff Support', description: 'Harmeda Healthcare: Exceptional staff support guaranteed.' },
-    { icon: Truck, title: 'Time On delivery', description: 'Harmeda Healthcare ensures timely delivery always.' },
+    { icon: Star, title: 'Customer Satisfaction', description: 'Vigo Ayurveda: Prioritizing customer satisfaction always.' },
+    { icon: Award, title: 'Product Quality', description: 'Vigo Ayurveda: Unmatched product quality always.' },
+    { icon: Headphones, title: 'Staff Support', description: 'Vigo Ayurveda: Exceptional staff support guaranteed.' },
+    { icon: Truck, title: 'Time On delivery', description: 'Vigo Ayurveda ensures timely delivery always.' },
   ];
+
+  const certifications = [
+  { name: "FSSAI", image: "/images/certifications/fssai.png" },
+  { name: "GMP", image: "/images/certifications/gmp.png" },
+  { name: "WHO", image: "/images/certifications/who.png" },
+  { name: "ISO", image: "/images/certifications/iso.png" },
+];
 
   return (
     <div className="min-h-screen">
@@ -95,7 +102,7 @@ const Home = () => {
               INDIA'S LEADING THIRD PARTY MANUFACTURING COMPANY!
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              Expertise in Developing A Wide Range of Ayurvedic & Nutraceutical Products
+              Expertise in Developing A Wide Range of Ayurvedic Products
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
@@ -128,11 +135,15 @@ const Home = () => {
       {/* Certification Logos */}
       <section className="py-8 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            {['FSSAI', 'GMP', 'WHO', 'ISO'].map((cert) => (
-              <div key={cert} className="text-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-brand-light-green flex items-center justify-center">
-                  <span className="text-brand-green font-bold text-sm md:text-base">{cert}</span>
+          <div className="flex flex-wrap justify-evenly items-center gap-8 md:gap-16">
+            {certifications.map((cert, index) => (
+              <div key={index} className="text-center">
+                <div className="w-24 h-24 md:w-24 md:h-24 flex items-center justify-center">
+                  <img
+                    src={cert.image}
+                    alt={cert.name}
+                    className="w-24 h-24 object-contain"
+                  />
                 </div>
               </div>
             ))}
@@ -147,10 +158,10 @@ const Home = () => {
             <div className="reveal">
               <span className="text-brand-green font-medium uppercase tracking-wide text-sm">About the company</span>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mt-3 mb-6">
-                Trusted Nutraceuticals: Premier Manufacturer of Quality Products.
+                Trusted Ayurveda: Premier Manufacturer of Quality Products.
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Harmeda Healthcare is a well-known <strong className="text-brand-navy">nutraceuticals manufacturing company in India</strong> that is compliant with good manufacturing practices (GMP), ensures high-quality and contamination-free drug production, and also our WHO-GMP certification indicates global standard adherence. Along with this, we are fully compliant with the iso 9001:2015 or iso 13485 certification, which demonstrates our commitment to quality management systems.
+                Vigo Ayurveda is a well-known <strong className="text-brand-navy">Ayurvedic manufacturing company in India</strong> that is compliant with good manufacturing practices (GMP), ensures high-quality and contamination-free drug production, and also our WHO-GMP certification indicates global standard adherence. Along with this, we are fully compliant with the iso 9001:2015 or iso 13485 certification, which demonstrates our commitment to quality management systems.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
                 However, in-house quality control labs are one of the important parts of our manufacturing services that allow us to always be equipped with analytical instruments (e.g., HPLC, UV spectrophotometers) for real-time product testing. Hence, we always ensure batch-to-batch consistency and compliance with pharmacopeial standards (IP/BP/usp/EP).
@@ -232,7 +243,7 @@ const Home = () => {
               Empowering your health with greatness.
             </h2>
             <p className="text-gray-600 mt-4">
-              We always give importance to health; we manufacture high-quality ayurvedic medicine in a variety of forms at reasonable prices.
+              We always give importance to health. We manufacture high-quality ayurvedic medicine in a variety of forms at reasonable prices.
             </p>
           </div>
 
@@ -270,7 +281,7 @@ const Home = () => {
       <section className="py-16 md:py-24 bg-brand-light-green">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12 reveal">
-            <span className="text-brand-green font-medium uppercase tracking-wide text-sm">Why choose Harmeda Healthcare?</span>
+            <span className="text-brand-green font-medium uppercase tracking-wide text-sm">Why choose Vigo Ayurveda?</span>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mt-3">
               When you come to our company, you will always get the unique knowledge and high-quality medicines.
             </h2>
@@ -419,7 +430,7 @@ const Home = () => {
                 Explore Our Services
               </h2>
               <p className="text-gray-300 leading-relaxed mb-8">
-                Harmeda Healthcare, the top-rated <strong className="text-brand-green">third-party ayurvedic pharma manufacturer in India</strong>, plays a pivotal role in supporting the country's pharmaceutical ecosystem, enabling scalability, innovation, and cost-efficiency. Thus, it allows us to be today's leading nutraceutical manufacturing company in India.
+                Vigo Ayurveda, the top-rated <strong className="text-brand-green">third-party ayurvedic pharma manufacturer in India</strong>, plays a pivotal role in supporting the country's pharmaceutical ecosystem, enabling scalability, innovation, and cost-efficiency. Thus, it allows us to be today's leading Ayurvedic manufacturing company in India.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, Facebook, Linkedin, Instagram, Youtube, ChevronDown, Menu, X } from 'lucide-react';
 
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -58,7 +59,7 @@ const Header = () => {
               <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
                 <Linkedin size={14} />
               </a>
-              <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
+              <a href="https://www.instagram.com/vigoayurveda?igsh=MTExMncyOHRxMWU1" target='_blank' className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
                 <Instagram size={14} />
               </a>
               <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
@@ -81,14 +82,7 @@ const Header = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <div className="w-16 h-16 md:w-20 md:h-20 relative">
-                <svg viewBox="0 0 100 100" className="w-full h-full">
-                  <circle cx="50" cy="50" r="45" fill="none" stroke="#00a651" strokeWidth="2" strokeDasharray="8 4" />
-                  <rect x="35" y="25" width="12" height="50" fill="#00a651" />
-                  <rect x="53" y="25" width="12" height="50" fill="#dc2626" />
-                  <circle cx="41" cy="20" r="4" fill="#dc2626" />
-                  <circle cx="59" cy="20" r="4" fill="#00a651" />
-                  <text x="50" y="88" textAnchor="middle" fontSize="8" fill="#00a651" fontWeight="bold">HARMEDA</text>
-                </svg>
+                <img src="/images/logo.png" alt="logo" />
               </div>
             </Link>
 

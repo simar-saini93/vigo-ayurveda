@@ -63,10 +63,10 @@ const About = () => {
             <div className="reveal">
               <span className="text-brand-green font-medium uppercase tracking-wide text-sm">About the company</span>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mt-3 mb-6">
-                Harmeda Healthcare: Leading Nutraceuticals Manufacturing Company in India
+                Vigo Ayurveda: Leading Ayurvedic Manufacturing Company in India
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Harmeda Healthcare is a prominent manufacturer of premium-quality nutraceuticals in India. We are committed to producing top-notch supplements that support health and well-being. Every product is designed to be completely safe and active, which is everything to protect and improve the health of your skin.
+                Vigo Ayurveda is a prominent manufacturer of premium-quality Ayurvedic Products in India. We are committed to producing top-notch supplements that support health and well-being. Every product is designed to be completely safe and active, which is everything to protect and improve the health.
               </p>
               <div className="grid sm:grid-cols-2 gap-6 mb-8">
                 <div className="flex items-start gap-3">
@@ -87,7 +87,7 @@ const About = () => {
                 </div>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Certainly! Our company is well-known for producing, exporting, and supplying certified products and dependable services across multiple sectors. This will include standardized herbal extracts and nutraceuticals, as well as herbal and Ayurvedic formulations.
+                Certainly! Our company is well-known for producing, exporting, and supplying certified products and dependable services across multiple sectors. This will include standardized herbal extracts, as well as Ayurvedic formulations.
               </p>
             </div>
           </div>
@@ -161,13 +161,13 @@ const About = () => {
             <div className="reveal">
               <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
               <p className="text-gray-300 leading-relaxed">
-                To supply standardised and researched pharma and healthcare products to our clients and business associates through constant innovation, thereby promoting healthy living and providing exceptional value. We are committed to producing premium-quality nutraceuticals and ayurvedic products that support health and well-being across India and beyond.
+                To supply standardised and researched pharma and healthcare products to our clients and business associates through constant innovation, thereby promoting healthy living and providing exceptional value. We are committed to producing premium-quality ayurvedic products that support health and well-being across India and beyond.
               </p>
             </div>
             <div className="reveal">
               <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
               <p className="text-gray-300 leading-relaxed">
-                To become India's most trusted and leading third-party manufacturing company for nutraceuticals and ayurvedic products. We aim to set new benchmarks in quality, innovation, and customer satisfaction while contributing to the global healthcare ecosystem through our commitment to excellence and ethical business practices.
+                To become India's most trusted and leading third-party manufacturing company for ayurvedic products. We aim to set new benchmarks in quality, innovation, and customer satisfaction while contributing to the global healthcare ecosystem through our commitment to excellence and ethical business practices.
               </p>
             </div>
           </div>

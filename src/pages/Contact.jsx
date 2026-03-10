@@ -75,8 +75,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: ['harmedahealthcare@gmail.com', 'customercare@harmedahealthcare.com'],
-      link: 'mailto:info@harmedahealthcare.com'
+      details: ['vigoayurveda@gmail.com', 'customercare@vigoayurveda.com'],
+      link: 'mailto:info@vigoayurveda.com'
     },
     {
       icon: Phone,
@@ -115,7 +115,7 @@ const Contact = () => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Harmeda Healthcare Location"
+          title="Vigo Ayurveda Location"
         ></iframe>
       </section>
 
@@ -130,7 +130,7 @@ const Contact = () => {
                 Have Questions? Don't Hesitate to Contact Us
               </h2>
               <p className="text-gray-600 mb-8">
-                Contact Harmeda Healthcare for all inquiries—our services are free and we're here to help.
+                Contact Vigo Ayurveda for all inquiries—our services are free and we're here to help.
               </p>
 
               <div className="space-y-6">
@@ -279,7 +279,7 @@ const Contact = () => {
               Ready to Start Your Project?
             </h2>
             <p className="text-gray-300 mb-8">
-              Get in touch with us today to discuss your manufacturing requirements. We offer competitive pricing and exceptional quality for all your nutraceutical and ayurvedic product needs.
+              Get in touch with us today to discuss your manufacturing requirements. We offer competitive pricing and exceptional quality for all your ayurvedic product needs.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
@@ -290,7 +290,7 @@ const Contact = () => {
                 Call Now
               </a>
               <a 
-                href="mailto:info@harmedahealthcare.com"
+                href="mailto:info@vigoayurveda.com"
                 className="border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-brand-navy transition-colors inline-flex items-center gap-2"
               >
                 <Mail size={18} />

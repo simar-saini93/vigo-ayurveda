@@ -97,7 +97,7 @@ const Liquids = () => {
                 We provide the top services of the production of various types of liquid dosage forms, including: syrups, suspensions, oral drops, tonics etc.
               </p>
               <p className="text-gray-600 mb-8">
-                We produce excellent quality nutraceutical Liquid using cutting-edge technology for different health requirements, ensuring consistency as well as safety.
+                We produce excellent quality Ayurvedic Liquid using cutting-edge technology for different health requirements, ensuring consistency as well as safety.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
@@ -196,7 +196,7 @@ const Liquids = () => {
               Looking for Custom Liquid Formulations?
             </h2>
             <p className="text-gray-300 mb-8">
-              Contact us today to discuss your liquid manufacturing requirements. We offer competitive pricing and exceptional quality for all your nutraceutical liquid needs.
+              Contact us today to discuss your liquid manufacturing requirements. We offer competitive pricing and exceptional quality for all your Ayurvedic liquid needs.
             </p>
             <Link 
               to="/contact"

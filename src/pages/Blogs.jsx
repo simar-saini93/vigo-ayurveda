@@ -29,51 +29,51 @@ const Blogs = () => {
 
   const blogPosts = [
     {
-      title: 'Understanding Nutraceuticals: Benefits and Applications',
-      excerpt: 'Nutraceuticals are products derived from food sources that provide extra health benefits beyond basic nutritional value. Learn about their various applications in healthcare.',
+      title: 'Understanding Ayurveda: Benefits and Applications',
+      excerpt: 'Ayurvedic products are derived from food sources that provide extra health benefits beyond basic nutritional value. Learn about their various applications in healthcare.',
       image: '/images/product-capsules.jpg',
-      author: 'Harmeda Healthcare',
-      date: 'Jan 15, 2025',
-      category: 'Nutraceuticals'
+      author: 'Vigo Ayurveda',
+      date: 'Mar 15, 2026',
+      category: 'Ayurveda'
     },
     {
       title: 'The Rise of Ayurvedic Medicine in Modern Healthcare',
       excerpt: 'Ayurvedic medicine has been gaining popularity worldwide. Discover how traditional Indian medicine is being integrated into modern healthcare practices.',
       image: '/images/product-liquids.jpg',
-      author: 'Harmeda Healthcare',
-      date: 'Jan 10, 2025',
+      author: 'Vigo Ayurveda',
+      date: 'Mar 15, 2026',
       category: 'Ayurveda'
     },
     {
       title: 'GMP Certification: Why It Matters for Pharmaceutical Manufacturing',
       excerpt: 'Good Manufacturing Practice (GMP) certification ensures that products are consistently produced and controlled to quality standards. Learn why its crucial.',
       image: '/images/about-lab.jpg',
-      author: 'Harmeda Healthcare',
-      date: 'Jan 5, 2025',
+      author: 'Vigo Ayurveda',
+      date: 'Mar 15, 2026',
       category: 'Quality'
     },
     {
       title: 'Protein Supplements: Types and Benefits',
       excerpt: 'Protein supplements come in various forms including whey, casein, and plant-based options. Understand which type suits your needs best.',
       image: '/images/product-protein.jpg',
-      author: 'Harmeda Healthcare',
-      date: 'Dec 28, 2024',
+      author: 'Vigo Ayurveda',
+      date: 'Mar 15, 2026',
       category: 'Supplements'
     },
     {
       title: 'Third-Party Manufacturing: Advantages for Your Business',
       excerpt: 'Outsourcing manufacturing to specialized facilities can help businesses scale efficiently. Explore the benefits of third-party pharmaceutical manufacturing.',
       image: '/images/feature-rnd.jpg',
-      author: 'Harmeda Healthcare',
-      date: 'Dec 20, 2024',
+      author: 'Vigo Ayurveda',
+      date: 'Mar 15, 2026',
       category: 'Manufacturing'
     },
     {
       title: 'Quality Control in Pharmaceutical Production',
       excerpt: 'Quality control is essential in pharmaceutical manufacturing. Learn about the various testing methods and standards that ensure product safety.',
       image: '/images/hero-banner.jpg',
-      author: 'Harmeda Healthcare',
-      date: 'Dec 15, 2024',
+      author: 'Vigo Ayurveda',
+      date: 'Mar 15, 2026',
       category: 'Quality'
     },
   ];
@@ -97,7 +97,7 @@ const Blogs = () => {
               Latest News & Articles
             </h2>
             <p className="text-gray-600 mt-4">
-              Stay updated with the latest trends and insights in the nutraceutical and ayurvedic manufacturing industry.
+              Stay updated with the latest trends and insights in the ayurvedic manufacturing industry.
             </p>
           </div>
 
