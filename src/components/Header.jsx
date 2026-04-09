@@ -42,35 +42,39 @@ const Header = () => {
       <div className="bg-brand-navy text-white py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
           <div className="flex items-center gap-6 text-sm">
-            <a href="mailto:info@harmedahealthcare.com" className="flex items-center gap-2 hover:text-brand-green transition-colors">
+            <a href="mailto:vigoayurveda@gmail.com" className="flex items-center gap-2 hover:text-brand-green transition-colors">
               <Mail size={14} />
-              <span>info@harmedahealthcare.com</span>
+              <span>vigoayurveda@gmail.com</span>
             </a>
-            <a href="tel:+917888840794" className="flex items-center gap-2 hover:text-brand-green transition-colors">
+            <a href="tel:+919888968028" className="flex items-center gap-2 hover:text-brand-green transition-colors">
               <Phone size={14} />
-              <span>+91-7888840794</span>
+              <span>+91-9888968028</span>
+            </a>
+            <a href="tel:+919781700053" className="flex items-center gap-2 hover:text-brand-green transition-colors">
+              <Phone size={14} />
+              <span>+91-9781700053</span>
             </a>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-3">
-              <a href="https://www.facebook.com/people/Harmeda-Healthcare-Private-Limited/61575717527347/" target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
+               <a href="https://www.facebook.com/people/Harmeda-Healthcare-Private-Limited/61575717527347/" target="_blank" rel="noopener noreferrer" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
                 <Facebook size={14} />
               </a>
               <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
                 <Linkedin size={14} />
               </a>
+              {/* <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
+                <Youtube size={14} />
+              </a> */}
               <a href="https://www.instagram.com/vigoayurveda?igsh=MTExMncyOHRxMWU1" target='_blank' className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
                 <Instagram size={14} />
-              </a>
-              <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-all">
-                <Youtube size={14} />
-              </a>
+              </a> 
             </div>
-            <div className="hidden md:flex items-center gap-2 text-sm ml-4">
+            {/* <div className="hidden md:flex items-center gap-2 text-sm ml-4">
               <Link to="/contact" className="hover:text-brand-green transition-colors">Help</Link>
               <span>/</span>
               <Link to="/contact" className="hover:text-brand-green transition-colors">Contact</Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

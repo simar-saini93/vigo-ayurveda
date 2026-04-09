@@ -30,10 +30,10 @@ const Home = () => {
   }, []);
 
   const products = [
-    { name: 'Tablets', image: '/images/product-tablets.jpg' },
-    { name: 'Capsules', image: '/images/product-capsules.jpg' },
-    { name: 'Liquids', image: '/images/product-liquids.jpg' },
-    { name: 'Protein Powder', image: '/images/product-protein.jpg' },
+    { name: 'Tablets', image: '/images/product-tablets.jpg', path: '/tablet' },
+    { name: 'Capsules', image: '/images/product-capsules.jpg', path: '/capsules' },
+    { name: 'Liquids', image: '/images/product-liquids.jpg', path: '/liquid' },
+    { name: 'Protein Powder', image: '/images/product-protein.jpg', path: '/protein-powder' },
   ];
 
   const features = [
@@ -248,22 +248,26 @@ const Home = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => (
-              <div key={index} className="reveal group">
-                <div className="relative rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h3 className="text-white font-semibold text-lg">{product.name}</h3>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+  {products.map((product, index) => (
+    <Link
+      key={index}
+      to={product.path}
+      className="reveal group"
+    >
+      <div className="relative rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 cursor-pointer">
+        <img 
+          src={product.image} 
+          alt={product.name}
+          className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-transparent to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 p-4">
+          <h3 className="text-white font-semibold text-lg">{product.name}</h3>
+        </div>
+      </div>
+    </Link>
+  ))}
+</div>
 
           <div className="text-center mt-10">
             <Link 
@@ -295,16 +299,16 @@ const Home = () => {
                 </div>
                 <h3 className="font-semibold text-brand-navy text-lg mb-2">{feature.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{feature.description}</p>
-                <Link to={feature.link} className="inline-flex items-center gap-1 text-brand-green text-sm font-medium hover:gap-2 transition-all">
+                { /*<Link to={feature.link} className="inline-flex items-center gap-1 text-brand-green text-sm font-medium hover:gap-2 transition-all">
                   Read More <ChevronRight size={16} />
-                </Link>
+                </Link> */}
               </div>
             ))}
           </div>
 
           <div className="text-center mt-10">
             <Link 
-              to="/about"
+              to="/about" onClick={() => window.scrollTo(0, 0)}
               className="inline-flex items-center gap-2 border-2 border-brand-green text-brand-green px-8 py-3 rounded-full font-medium hover:bg-brand-green hover:text-white transition-colors"
             >
               More Features
@@ -401,9 +405,9 @@ const Home = () => {
                 </div>
                 <h3 className="font-semibold text-brand-navy group-hover:text-white mb-2 transition-colors">{stat.title}</h3>
                 <p className="text-gray-600 text-sm group-hover:text-white/80 transition-colors">{stat.description}</p>
-                <Link to="#" className="inline-flex items-center gap-1 text-brand-green group-hover:text-white text-sm font-medium mt-4 hover:gap-2 transition-all">
+                { /* <Link to="#" className="inline-flex items-center gap-1 text-brand-green group-hover:text-white text-sm font-medium mt-4 hover:gap-2 transition-all">
                   Read More <ChevronRight size={16} />
-                </Link>
+                </Link> */}
               </div>
             ))}
           </div>
@@ -421,57 +425,75 @@ const Home = () => {
       </section>
 
       {/* Advantages Section */}
-      <section className="py-16 md:py-24 bg-brand-navy text-white">
+      <section className="py-20 md:py-28 bg-[#e8f5e9]">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="reveal">
-              <span className="text-brand-green font-medium uppercase tracking-wide text-sm">Our Advantages</span>
-              <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-6">
-                Explore Our Services
+
+          <div className="grid lg:grid-cols-2 gap-16">
+
+            {/* LEFT: STICKY CONTENT */}
+            <div className="lg:sticky top-24 h-fit">
+              <span className="text-brand-green font-semibold uppercase tracking-wide text-sm">
+                Our Advantages
+              </span>
+
+              <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-[#003366] leading-tight">
+                Why Brands Choose Vigo Ayurveda
               </h2>
-              <p className="text-gray-300 leading-relaxed mb-8">
-                Vigo Ayurveda, the top-rated <strong className="text-brand-green">third-party ayurvedic pharma manufacturer in India</strong>, plays a pivotal role in supporting the country's pharmaceutical ecosystem, enabling scalability, innovation, and cost-efficiency. Thus, it allows us to be today's leading Ayurvedic manufacturing company in India.
+
+              <p className="text-[#003366]/80 text-lg leading-relaxed">
+                We provide end-to-end Ayurvedic manufacturing solutions designed
+                for quality, scalability, and long-term growth.
               </p>
-              <ul className="space-y-4">
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" />
-                  <span>In-house design for your brand</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" />
-                  <span>Excellent packaging is available</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" />
-                  <span>GMP and ISO certified manufacturing</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-brand-green flex-shrink-0" />
-                  <span>Timely delivery guaranteed</span>
-                </li>
-              </ul>
             </div>
-            <div className="reveal">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="bg-white/10 rounded-xl p-6">
-                  <p className="text-4xl font-bold text-brand-green mb-2">500+</p>
-                  <p className="text-gray-300">Products Manufactured</p>
+
+            {/* RIGHT: SCROLL CARDS */}
+            <div className="space-y-6">
+
+              {[
+                {
+                  title: "In-house Design",
+                  desc: "We help you build your brand identity from scratch.",
+                  stat: "500+ Products",
+                },
+                {
+                  title: "Premium Packaging",
+                  desc: "High-quality packaging that enhances product appeal.",
+                  stat: "200+ Clients",
+                },
+                {
+                  title: "Certified Manufacturing",
+                  desc: "GMP & ISO certified production you can trust.",
+                  stat: "15+ Years Experience",
+                },
+                {
+                  title: "Timely Delivery",
+                  desc: "Reliable and fast order fulfillment.",
+                  stat: "50+ Experts",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="border border-gray-200 rounded-2xl p-6 hover:shadow-xl transition hover:-translate-y-1 bg-white"
+                >
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="font-semibold text-[#003366] text-lg">
+                      {item.title}
+                    </h3>
+                    <span className="text-brand-green font-bold text-sm">
+                      {item.stat}
+                    </span>
+                  </div>
+
+                  <p className="text-[#003366]/80 text-sm">
+                    {item.desc}
+                  </p>
                 </div>
-                <div className="bg-white/10 rounded-xl p-6">
-                  <p className="text-4xl font-bold text-brand-green mb-2">200+</p>
-                  <p className="text-gray-300">Happy Clients</p>
-                </div>
-                <div className="bg-white/10 rounded-xl p-6">
-                  <p className="text-4xl font-bold text-brand-green mb-2">15+</p>
-                  <p className="text-gray-300">Years Experience</p>
-                </div>
-                <div className="bg-white/10 rounded-xl p-6">
-                  <p className="text-4xl font-bold text-brand-green mb-2">50+</p>
-                  <p className="text-gray-300">Expert Team Members</p>
-                </div>
-              </div>
+              ))}
+
             </div>
+
           </div>
+
         </div>
       </section>
     </div>
