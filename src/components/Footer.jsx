@@ -155,13 +155,13 @@ const Footer = () => {
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
         <a 
-          href="tel:+917888840794" 
+          href="tel:+919888968028" 
           className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition-colors"
         >
           <Phone size={22} className="text-white" />
         </a>
         <a 
-          href="https://api.whatsapp.com/send?phone=7888840792&text=hello" 
+          href="https://api.whatsapp.com/send?phone=9888968028&text=hello" 
           target="_blank" 
           rel="noopener noreferrer"
           className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors"
